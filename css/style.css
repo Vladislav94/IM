@@ -137,6 +137,234 @@ body {
   background: #f3f3f3;
 }
 
+
+/* Base */
+
+
+.input-wrap {
+  border: 1px solid #d8d8d8;
+  height: 30px;
+  font-size: 13px;
+  color: #666666;
+  font-family: 'ProximaNova Light';
+  display: table;
+  width: 100%;
+  padding: 0 10px;
+}
+.input-wrap .input-label {
+  padding: 6px 0;
+  display: table-cell;
+}
+.input-wrap input {
+  display: table-cell;
+  padding: 6px 0;
+  width: 100%;
+}
+
+.container {
+  width: 1200px;
+  margin: auto; 
+  padding: 0 15px;
+}
+
+.main-container {
+  margin-top: 20px;
+}
+
+.container:before,
+.clearfix:before,
+.container:after,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.container:after,
+.clearfix:after {
+  clear:both;
+}
+
+.sidebar {
+  width: 275px;
+  float: left;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+/* Filter */
+
+.sidebar .main-filter {
+  padding: 40px;
+}
+
+.main-filter .filter-inner {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 28px;
+}
+
+.main-filter .filter-inner:last-of-type {
+  margin-bottom: 0;
+}
+
+.main-filter .filter-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: 'ProximaNova Bold';
+  margin-bottom: 12px;
+}
+.main-filter .filter-items_scroll {
+  max-height: 120px;
+}
+
+.main-filter .filter-size .input-wrap {
+  margin-bottom: 15px;
+}
+
+.main-filter .filter-size .input-wrap:last-of-type {
+  margin-bottom: 0;
+}
+
+.main-filter .filter-manufacturer {
+  max-height: 145px;
+}
+
+.main-filter .filter-item {
+  margin-bottom: 4px;
+}
+
+.main-filter .filter-letter {
+  font-size: 14px;
+  font-family: 'ProximaNova Light';
+  color: #999999;
+  margin-left: 24px;
+  margin-bottom: 8px;
+}
+
+.main-filter .filter-label {
+  display: inline-block;
+  cursor: pointer;
+}
+.main-filter .filter-label:hover .filter-name {
+  font-family: 'ProximaNova Bold';
+}
+.main-filter .filter-label:before,
+.main-filter .filter-label:after {
+  content:"";
+  display:table;
+}
+.main-filter .filter-label:after {
+  clear:both;
+}
+
+.main-filter .filter-item .filter-checkbox {
+  float: left;
+}
+
+.main-filter .filter-item .filter-name {
+  color: #383a73;
+  font-size: 14px;
+  font-family: 'ProximaNova Light';
+  overflow: hidden;
+  padding-left: 10px;
+  line-height: 1.2;
+}
+
+/* Filter end */
+
+.main-content {
+  width: 870px;
+  float: right;
+  background: #fff;
+  padding: 35px 40px 80px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  padding-left: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.breadcrumb li {
+  display: inline-block;
+}
+
+.breadcrumb li:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 3px;
+  height: 4px;
+  margin: -2px 18px 0 14px;
+  background: url(../img/icons/breadcrumb-arrow.png) no-repeat;
+}
+
+.breadcrumb li:first-child:before {
+  content: none;
+}
+
+.breadcrumb li,
+.breadcrumb li a {
+  font-size: 14px;
+  color: #999999;
+  font-family: 'ProximaNova Light';
+}
+
+.content-title {
+  font-size: 40px;
+  color: #000;
+  margin: 0;
+  font-family: 'ProximaNova SBold';
+}
+
+.load-icon {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.load-icon .icon {
+  animation-name: rotate-load;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes rotate-load {
+  0% {
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-load {
+  0% {
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Base end */
+
 .justify-last {
   visibility: hidden; 
 
@@ -1186,223 +1414,6 @@ Icon classes can be used entirely standalone. They are named after their origina
   background-image: url(../img/design/sprite.png);
   background-position: -256px -128px;
 }
-
-
-
-
-
-
-
-/* Base */
-
-.container {
-  width: 1200px;
-  margin: auto; 
-  padding: 0 15px;
-}
-
-.main-container {
-  margin-top: 20px;
-}
-
-.container:before,
-.clearfix:before,
-.container:after,
-.clearfix:after {
-  content:"";
-  display:table;
-}
-.container:after,
-.clearfix:after {
-  clear:both;
-}
-
-.sidebar {
-  width: 275px;
-  float: left;
-  background: #fff;
-  margin-bottom: 20px;
-}
-
-/* Filter */
-
-.sidebar .main-filter {
-  padding: 40px;
-}
-
-.main-filter .filter-inner {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 28px;
-}
-
-.main-filter .filter-inner:last-of-type {
-  margin-bottom: 0;
-}
-
-.main-filter .filter-title {
-  font-size: 13px;
-  text-transform: uppercase;
-  font-family: 'ProximaNova Bold';
-  margin-bottom: 12px;
-}
-.main-filter .filter-items_scroll {
-  max-height: 120px;
-}
-
-.main-filter .filter-manufacturer {
-  max-height: 145px;
-}
-
-.main-filter .filter-item {
-  margin-bottom: 4px;
-}
-
-.main-filter .filter-letter {
-  font-size: 14px;
-  font-family: 'ProximaNova Light';
-  color: #999999;
-  margin-left: 24px;
-  margin-bottom: 8px;
-}
-
-.main-filter .filter-label {
-  display: inline-block;
-  cursor: pointer;
-}
-.main-filter .filter-label:hover .filter-name {
-  font-family: 'ProximaNova Bold';
-}
-.main-filter .filter-label:before,
-.main-filter .filter-label:after {
-  content:"";
-  display:table;
-}
-.main-filter .filter-label:after {
-  clear:both;
-}
-
-.main-filter .filter-item .filter-checkbox {
-  float: left;
-}
-
-.main-filter .filter-item .filter-name {
-  color: #383a73;
-  font-size: 14px;
-  font-family: 'ProximaNova Light';
-  overflow: hidden;
-  padding-left: 10px;
-  line-height: 1.2;
-}
-
-/* Filter end */
-
-.main-content {
-  width: 870px;
-  float: right;
-  background: #fff;
-  padding: 35px 40px 80px;
-  margin-bottom: 20px;
-}
-
-.breadcrumb {
-  padding-left: 0;
-  margin: 0;
-  margin-bottom: 10px;
-}
-.breadcrumb li {
-  display: inline-block;
-}
-
-.breadcrumb li:before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  width: 3px;
-  height: 4px;
-  margin: -2px 18px 0 14px;
-  background: url(../img/icons/breadcrumb-arrow.png) no-repeat;
-}
-
-.breadcrumb li:first-child:before {
-  content: none;
-}
-
-.breadcrumb li,
-.breadcrumb li a {
-  font-size: 14px;
-  color: #999999;
-  font-family: 'ProximaNova Light';
-}
-
-.content-title {
-  font-size: 40px;
-  color: #000;
-  margin: 0;
-  font-family: 'ProximaNova SBold';
-}
-
-.load-icon {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.load-icon .icon {
-  animation-name: rotate-load;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-
-@keyframes rotate-load {
-  0% {
-    -webkit-transform: rotate(0);
-    -o-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -moz-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes rotate-load {
-  0% {
-    -webkit-transform: rotate(0);
-    -o-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -moz-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-/* Base end */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1199px) {
   .container {

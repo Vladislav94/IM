@@ -114,7 +114,7 @@
 
   <div class="container main-container">
     <aside class="sidebar">
-      <div class="main-filter">
+      <form class="main-filter">
         <div class="filter-inner filter-items_scroll">
           <div class="filter-title">статус товара</div>
 
@@ -343,23 +343,41 @@
           </div>
         </div>
 
-        <div class="filter-inner">
+        <div class="filter-inner filter-size">
           <div class="filter-title">размеры</div>
 
-          <div class="filter-items filter-items_scroll">
-            <div class="filter-item">
+          <div class="filter-items">
+            <div class="input-wrap">
+              <span class="input-label">Длина:</span>
               <input type="text" class="text-input">
             </div>
-            <div class="filter-item">
+            <div class="input-wrap">
+              <span class="input-label">Ширина:</span>
               <input type="text" class="text-input">
             </div>
-            <div class="filter-item">
+            <div class="input-wrap">
+              <span class="input-label">Высота:</span>
               <input type="text" class="text-input">
             </div>
           </div>
         </div>
 
-      </div>
+        <div class="filter-inner filter-price">
+          <div class="filter-title">цена</div>
+
+          <div class="filter-items">
+            <div class="input-wrap">
+              <span class="input-label">от:</span>
+              <input type="text" class="text-input">
+            </div>
+            <div class="input-wrap">
+              <span class="input-label">до:</span>
+              <input type="text" class="text-input">
+            </div>
+          </div>
+        </div>
+
+      </form>
     </aside>
 
     <div class="main-content">
