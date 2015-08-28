@@ -542,6 +542,128 @@ a.btn-green:hover {
   margin-top: -2px;
 }
 
+/* Card item */
+
+.card-item {
+  position: relative;
+  padding: 30px 0;
+  border-bottom: 1px solid #e6e6e6;
+  display: table;
+  width: 100%;
+  font-size: 14px;
+  font-family: 'ProximaNova Light';
+}
+
+.card-item:first-of-type {
+  border-top: 1px solid #e6e6e6;
+}
+
+.card-item .card-item_img {
+  display: table-cell;
+  width: 138px;
+}
+
+.card-item .card-item_img img {
+  width: 100%;
+}
+
+.card-item .card-item_option {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 35px;
+}
+
+.card-item .card-item_option .card-item_name {
+  color: #373a72;
+  font-family: 'ProximaNova Bold';
+}
+
+.card-item .card-item_option .card-item_size {
+  color: #666666;
+  margin-top: 5px;
+}
+
+.card-item .card-item_option .card-item_article {
+  color: #666666;
+  margin-top: 5px;
+}
+
+.card-item_option .card-item_article span {
+  color: #000;
+}
+
+.card-item .card-item_price {
+  display: table-cell;
+  vertical-align: top;
+  color: #000;
+  padding: 0 10px;
+  width: 16%;
+}
+
+.card-item .card-item_items {
+ display: table-cell;
+ vertical-align: top;
+ padding: 0 10px;
+ width: 18%;
+}
+.card-item .card-item_items .number-of_items {
+  display: inline-block;
+}
+
+.card-item_items .number-of_items .item-rem,
+.card-item_items .number-of_items .number-items,
+.card-item_items .number-of_items .item-add {
+  float: left;
+  background-color: #f3f3f3;
+}
+
+.card-item_items .number-of_items .item-rem,
+.card-item_items .number-of_items .item-add {
+  width: 29px;
+  height: 29px;
+}
+
+.card-item_items .number-of_items .item-rem {
+  background-image: url(../img/icons/minus.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-item_items .number-of_items .number-items {
+  padding: 7px 0 5px;
+  width: 30px;
+}
+.card-item_items .number-of_items .item-add {
+  background-image: url(../img/icons/plus.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.card-item_items .number-of_items .number-items {
+  color: #000;
+  text-align: center;
+}
+
+.card-item .card-item_price-sum {
+  display: table-cell;
+  vertical-align: top;
+  font-family: 'ProximaNova Bold';
+  color: #000;
+  padding: 0 10px;
+  width: 16%;
+}
+
+.card-item .card-item_del {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: url(../img/icons/del.png) no-repeat center;
+}
+
+/* Card item end */
+
 /* Base end */
 
 .justify-last {
@@ -777,6 +899,7 @@ a.btn-green:hover {
   content: url('../img/sprites/v-up.png');
 }
 
+
 .v-down {
   font-weight: 300;
   line-height: 30px;
@@ -786,7 +909,13 @@ a.btn-green:hover {
   text-align: center;
   text-transform: capitalize; 
 
+  visibility: hidden;
+
   color: #fff;
+}
+
+.header__nav-right--hover .v-down {
+  visibility: visible;
 }
 .v-down__1 {
   display: none;
@@ -1900,6 +2029,40 @@ Icon classes can be used entirely standalone. They are named after their origina
   .special__wrapper {
     padding: 0 110px;
   }
+
+  .card-item {
+    display: block;
+  }
+
+  .card-item .card-item_option {
+    overflow: hidden;
+  }
+  .card-item .card-item_img {
+    display: block;
+    float: left;
+  }
+
+  .card-item .card-item_price {
+    display: block;
+    clear: both;
+    padding: 0;
+    padding-top: 10px;
+    width: auto;
+  }
+
+  .card-item .card-item_items {
+    display: block;
+    padding: 0;
+    margin-top: 10px;
+    width: auto;
+  }
+
+  .card-item .card-item_price-sum {
+    display: block;
+    padding: 0;
+    margin-top: 10px;
+    width: auto;
+  }
 }
 
 @media (max-width: 479px) {
@@ -1976,5 +2139,23 @@ Icon classes can be used entirely standalone. They are named after their origina
   }
   .special__wrapper {
     padding: 0 20px;
+  }
+  
+  .card-item .card-item_img {
+    float: none;
+  }
+
+  .card-item .card-item_option {
+    overflow: auto;
+    padding-top: 10px;
+    padding-left: 0;
+  }
+
+  .card-item .card-item_price,
+  .card-item .card-item_price-sum,
+  .card-item .card-item_items {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
   }
 }
