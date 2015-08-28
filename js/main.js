@@ -8,6 +8,16 @@ $( document ).ready(function() {
         rewindNav: false,
         autoPlay: true
     });
+
+    $('.product-slider').owlCarousel({
+        singleItem : true,
+        navigation : true,
+        navigationText : false,
+        slideSpeed: 1500,
+        //paginationSpeed: 2500,
+        rewindNav: false,
+        autoPlay: false
+    });
 });
 
 $( document ).ready(function() {
@@ -58,16 +68,18 @@ $( document ).ready(function() {
     });
 
 
-    $('.special__wrapper').owlCarousel({
-        navigation : false,
-        //navigationText : false,
-        autoPlay: true,
+    $('.main-carousel .special__wrapper').owlCarousel({
+        navigation : true,
+        autoPlay: false,
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [991,2],
+        navigationText : false,
+        rewindNav: false,
         itemsTablet: [767,1],
         itemsMobile : [479,1],
-        items : 4
-
+        items : 4,
+        navigationText : false,
+        slideSpeed: 1000
     });
 
 
