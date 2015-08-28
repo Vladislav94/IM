@@ -152,7 +152,7 @@ body {
   padding: 0 10px;
 }
 .input-wrap .input-label {
-  padding: 6px 0;
+  padding: 6px 4px 6px 0;
   display: table-cell;
 }
 .input-wrap input {
@@ -169,6 +169,14 @@ body {
 
 .main-container {
   margin-top: 20px;
+}
+
+.main-content {
+  width: 870px;
+  float: right;
+  background: #fff;
+  padding: 35px 40px 80px;
+  margin-bottom: 20px;
 }
 
 .container:before,
@@ -190,6 +198,16 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1199px) {
+  .sidebar {
+    width: 240px;
+  }
+
+  .main-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 /* Filter */
 
 .sidebar .main-filter {
@@ -269,15 +287,140 @@ body {
   line-height: 1.2;
 }
 
-/* Filter end */
+/* Range styles */
 
-.main-content {
-  width: 870px;
-  float: right;
-  background: #fff;
-  padding: 35px 40px 80px;
-  margin-bottom: 20px;
+.filter-range {
+  margin-top: 20px;
 }
+
+.filter-range #range {
+  height: 1px;
+  background: #e6e6e6;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.filter-range .noUi-connect {
+  background: #646590;
+}
+
+.filter-range .noUi-horizontal .noUi-handle {
+  background: #383a73;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  margin-top: -3px;
+  box-shadow: none;
+  border: none;
+}
+
+.filter-range .noUi-horizontal .noUi-handle-lower {
+  margin-left: 9px;
+}
+.filter-range .noUi-horizontal .noUi-handle-upper {
+  margin-left: 9px;
+}
+
+.filter-range .noUi-handle:before,
+.filter-range .noUi-handle:after {
+  content: none;
+}
+
+.filter-range .range-values {
+  font-size: 13px;
+  color: #000;
+  font-family: 'ProximaNova Light';
+  margin-top: 20px;
+}
+.filter-range .slider-snap-value-lower {
+  float: left;
+}
+.filter-range .slider-snap-value-upper {
+  float: right;
+}
+
+.filter-range .inputs-group {
+  margin-top: 20px;
+}
+
+.filter-range .inputs-group .input-wrap {
+  width: 93px;
+}
+
+.filter-range .inputs-group .input-wrap_from {
+  float: left;
+}
+
+.filter-range .inputs-group .input-wrap_to {
+  float: right;
+}
+/* Range styles end */
+
+.valute {
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px dotted #bababa;
+  color: #bababa;
+  font-size: 14px;
+  font-family: 'ProximaNova Light';
+  text-align: center;
+  padding: 4px 0;
+}
+
+.valute-rubl span {
+  border-bottom: 1px solid #bababa;
+  line-height: 3.5px;
+  display: inline-block;
+  padding-left: 1px;
+  margin-left: -2px;
+  width: 6px;
+}
+
+.valute-rubl.active span {
+  border-bottom-color: #383a73;
+}
+
+
+.valute.active {
+  border: 1px dotted #383a73;
+  color: #383a73;
+}
+
+.filter-btns_group {
+  margin-top: 30px;
+}
+
+.filter-btns_group .filter-show {
+  padding: 9px 20px 7px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: none;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'ProximaNova EBold';
+  background: #383a73;
+}
+
+.filter-btns_group .filter-destroy {
+  font-size: 14px;
+  color: #373a72;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.filter-btns_group .filter-destroy:hover {
+  text-decoration: underline;
+}
+
+/* Filter end */
 
 .breadcrumb {
   padding-left: 0;

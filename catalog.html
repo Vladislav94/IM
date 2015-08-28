@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/assets.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/nouislider.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" href="css/catalog.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -366,15 +367,33 @@
           <div class="filter-title">цена</div>
 
           <div class="filter-items">
-            <div class="input-wrap">
-              <span class="input-label">от:</span>
-              <input type="text" class="text-input">
-            </div>
-            <div class="input-wrap">
-              <span class="input-label">до:</span>
-              <input type="text" class="text-input">
+            <a href="#" class="valute valute-rubl active"><span>P</span></a>
+            <a href="#" class="valute valute-euro"><span>€</span></a>
+            <a href="#" class="valute valute-dollar"><span>$</span></a>
+            
+            <div class="filter-range">
+              <div id="range"></div>
+              <div class="range-values clearfix">
+                <span class='slider-snap-value-lower'></span>
+                <span class='slider-snap-value-upper'></span>
+              </div>
+              <div class="inputs-group clearfix">
+                <div class="input-wrap input-wrap_from">
+                  <span class="input-label">от:</span>
+                  <input type="text" class="input-from text-input">
+                </div>
+                <div class="input-wrap input-wrap_to">
+                  <span class="input-label">до:</span>
+                  <input type="text" class="input-to text-input">
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+
+        <div class="filter-btns_group">
+          <button class="filter-show">показать</button>
+          <a href="#" class="filter-destroy">Сбросить</a>
         </div>
 
       </form>
@@ -889,6 +908,8 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
   <script src="js/assets.js"></script>
   <script src="js/jquery.mCustomScrollbar.min.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/range-settings.js"></script>
   <script src="js/main.js"></script>
   <script>
     (function($){
