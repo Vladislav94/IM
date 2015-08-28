@@ -1,0 +1,18 @@
+p.article {
+	margin: 5px 0;
+	font-size: 14px;
+	color: #9a9a9a;
+}
+p.article span {
+	font-weight: 700;
+	color: #000;
+}
+
+.position-inner .position-inner-left {
+	width: 50%;
+	float: left;
+}
+.position-inner .position-inner-right {
+	width: 50%;
+	float: right;
+}
