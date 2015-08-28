@@ -525,6 +525,23 @@ a.btn-green:hover {
   }
 }
 
+
+.back-to_list {
+  font-size: 14px;
+  color: #373a72;
+  display: inline-block;
+}
+
+.back-to_list:before {
+  content: '';
+  border: 4px solid transparent;
+  border-right-color: #bababa;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
 /* Base end */
 
 .justify-last {
@@ -1735,6 +1752,16 @@ Icon classes can be used entirely standalone. They are named after their origina
   .main-content {
     width: 100%;
   }
+
+  .content-section {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .content-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
   body {
     margin-bottom: 1080px;
   }
@@ -1883,6 +1910,11 @@ Icon classes can be used entirely standalone. They are named after their origina
     width: 320px;
     padding: 0 10px;
   }
+
+  .content-section {
+    padding: 20px 15px;
+  }
+
   .footer {
     height: 470px;
   }

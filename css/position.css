@@ -184,21 +184,6 @@ p.article span {
   width: 50%;
 }
 
-.position-footer .back-to_list {
-  font-size: 14px;
-  color: #373a72;
-}
-
-.position-footer .back-to_list:before {
-  content: '';
-  border: 4px solid transparent;
-  border-right-color: #bababa;
-  margin-right: 15px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: -2px;
-}
-
 .position-footer_right {
   float: right;
   width: 50%;
@@ -244,10 +229,6 @@ p.article span {
     float: none;
     padding-right: 0;
   }
-  .content-section {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
 
   .position-footer_left {
     float: none;
@@ -268,11 +249,5 @@ p.article span {
 
   .position-footer_right .need-help {
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .content-section {
-    padding: 20px 15px;
   }
 }
