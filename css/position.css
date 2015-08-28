@@ -8,6 +8,9 @@ p.article span {
 	color: #000;
 }
 
+.position-inner {
+	padding-top: 25px;
+}
 .position-inner .position-inner-left {
 	width: 50%;
 	float: left;
@@ -220,7 +223,6 @@ p.article span {
   font-size: 14px;
 }
 
-
 @media screen and (max-width: 1199px) {
   .position-footer_right .socials-likes {
     float: none;
@@ -236,6 +238,12 @@ p.article span {
 
 @media screen and (max-width: 767px) {
 
+  .position-inner .position-inner-left,
+  .position-inner .position-inner-right {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+  }
   .content-section {
     padding-right: 15px;
     padding-left: 15px;
@@ -265,6 +273,6 @@ p.article span {
 
 @media screen and (max-width: 479px) {
   .content-section {
-    padding: 20px 0;
+    padding: 20px 15px;
   }
 }
