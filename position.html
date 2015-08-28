@@ -130,7 +130,15 @@
               <p class="article">Артикул: <span>LE9K</span></p>
 
               <div class="position-inner clearfix">
-                <div class="position-inner-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad blanditiis praesentium consequatur, voluptatum maxime sit, harum placeat ipsum ut voluptatem non pariatur magnam eligendi odio rerum, quod nesciunt ratione facilis.</div>
+                <div class="position-inner-left">
+                  <div class="product-slider owl-has_pagination">
+                    <img src="img/product-slider/item1.jpg" alt="" class="product-item">
+                    <img src="img/product-slider/item1.jpg" alt="" class="product-item">
+                    <img src="img/product-slider/item1.jpg" alt="" class="product-item">
+                    <img src="img/product-slider/item1.jpg" alt="" class="product-item">
+                    <img src="img/product-slider/item1.jpg" alt="" class="product-item">
+                  </div>
+                </div>
                 <div class="position-inner-right">
                   <div class="position-inner-section">
                     <h5>Наличие</h5>
@@ -170,6 +178,22 @@
                 </div>
               </div>
 
+              <div class="position-footer">
+                <div class="position-footer_left">
+                  <a href="/" class="back-to_list">Вернуться к списку</a>
+                </div>
+                <div class="position-footer_right">
+                  <div class="socials-likes">
+                    <img src="img/icons/socials-likes.png" alt="">
+                  </div>
+
+                  <div class="need-help clearfix">
+                    <span>Нужна помощь?</span>
+                    <a href="/" class="need-help_link">Свяжитесь с нами</a>
+                  </div>
+                </div>
+              </div>
+
             </div>
             <!-- /.special__wrap -->
         </div>
@@ -182,8 +206,8 @@
             <div class="content-section">
                 <!-- /.special__tabs -->
                 <h2>Также рекомендуем посмотреть</h2>
-                <div class="special__tabs-content">
-                    <div class="special__wrapper special__discounts">
+                <div class="special__tabs-content main-carousel">
+                    <div class="special__wrapper special__discounts owl-has_pagination">
                         <a href="#" class="special__item">
                             <div class="special__img">
                                 <img src="img/content/special-main/1.jpg" alt=""/>
@@ -401,13 +425,6 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
   <script src="js/assets.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    (function($){
-        $(window).load(function(){
-            $(".filter-items_scroll").mCustomScrollbar();
-        });
-    })(jQuery);
-  </script>
 </body>
 </html>
 

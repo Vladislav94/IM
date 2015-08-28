@@ -102,3 +102,122 @@ p.article span {
 	margin-top: -4px;
 	margin-right: 8px;
  }
+
+
+.owl-has_pagination {
+  height: auto;
+  text-align: center;
+}
+
+
+.main-carousel {
+  height: auto;
+}
+
+.owl-has_pagination .special__item {
+  text-align: left;
+}
+
+.owl-has_pagination .owl-controls {
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  position: relative;
+  display: inline-block;
+  margin-top: 22px;
+}
+.product-slider .product-item {
+  width: 100%;
+}
+.owl-has_pagination .owl-controls .owl-page {
+  width: 5px;
+  height: 5px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background: #c4c4c4;
+  display: inline-block;
+}
+
+.owl-has_pagination .owl-controls .owl-page.active {
+  background: #373a72;
+}
+
+
+.owl-has_pagination .owl-controls .owl-prev {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 1px;
+  border: 10px solid transparent;
+  border-right-color: #c4c4c4;
+}
+
+.owl-has_pagination .owl-controls .owl-prev:hover {
+  border-right-color: #373a72; 
+}
+
+.owl-has_pagination .owl-controls .owl-next {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 1px;
+  border: 10px solid transparent;
+  border-left-color: #c4c4c4;
+}
+
+.owl-has_pagination .owl-controls .owl-next:hover {
+  border-left-color: #373a72; 
+}
+
+
+.position-footer {
+  margin-top: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.position-footer_left {
+  float: left;
+  width: 50%;
+}
+
+.position-footer .back-to_list {
+  font-size: 14px;
+  color: #373a72;
+}
+
+.position-footer .back-to_list:before {
+  content: '';
+  border: 4px solid transparent;
+  border-right-color: #bababa;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.position-footer_right {
+  float: right;
+  width: 50%;
+  padding-left: 35px;
+}
+
+.position-footer_right .socials-likes {
+  float: left;
+}
+
+.position-footer_right .need-help {
+  float: right;
+}
+
+.position-footer_right .need-help span {
+  color: #666666;
+  font-size: 14px;
+}
+
+.position-footer_right .need-help .need-help_link {
+  color: #373a72;
+  font-size: 14px;
+}
+

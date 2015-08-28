@@ -616,6 +616,22 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/assets.js"></script>
         <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.special__wrapper').owlCarousel({
+                navigation : false,
+                //navigationText : false,
+                autoPlay: true,
+                itemsDesktop : [1199,3],
+                itemsDesktopSmall : [991,2],
+                itemsTablet: [767,1],
+                itemsMobile : [479,1],
+                items : 4
+
+            });
+        }); 
+    </script>
     </body>
 </html>
 
