@@ -11,8 +11,94 @@ p.article span {
 .position-inner .position-inner-left {
 	width: 50%;
 	float: left;
+	padding-right: 50px;
 }
 .position-inner .position-inner-right {
 	width: 50%;
 	float: right;
 }
+
+.position-inner-section {
+	margin-bottom: 15px;
+}
+.position-inner-section .variantes {
+	margin-bottom: 15px;
+}
+.position-inner-section h5 {
+	font-size: 	14px;
+	color: #000;
+}
+.position-inner-section p {
+	font-size: 14px;
+	margin: 5px 0;
+	line-height: 1.6;
+}
+.position-inner-section a {
+	font-size: 14px;
+	color: #333774;
+}
+.position-inner-section p span.fat {
+	font-weight: 700;
+}
+.position-inner-section p span.expected {
+	color: #fca400;
+}
+.position-inner-section p span.dash {
+	color: #e7e7e7;
+	margin: 0 8px;
+}
+
+.price-holder .prices {
+	display: inline-block;
+	font-size: 24px;
+	margin-right: 25px;
+	line-height: 38px;
+	vertical-align: top;
+}
+.price-holder .old-price {
+	font-weight: 300;
+	color: #666666;
+	position: relative;
+}
+.price-holder .old-price:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 1px;
+	margin-top: -1px;
+	background: #000;
+}
+.price-holder .new-price {
+	font-weight: 700;
+	color: #000;
+}
+.price-holder .count {
+	display: inline-block;
+	background: #f3f3f3;
+	height: 38px;
+	padding: 0 15px;
+	margin-right: 15px;
+}
+.price-holder .count input[type="text"] {
+	height: 100%;
+	width: 25px;
+	text-align: center;
+	margin: 0 2px;
+	background: none;
+}
+.price-holder .minus,
+.price-holder .plus {
+	width: 11px;
+	height: 11px;
+	cursor: pointer;
+}
+.price-holder .btn-green {
+	color: #ffffff;
+}
+
+.btns-section a img {
+	margin-top: -4px;
+	margin-right: 8px;
+ }

@@ -150,6 +150,24 @@ h2 {
     background: #fff;
     margin-bottom: 20px;
 }
+
+.btn {
+  display: inline-block;
+}
+.btn-green,
+a.btn-green {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #00b080;
+  padding: 11px 25px;
+}
+.btn-green:hover,
+a.btn-green:hover {
+  background: #019d72;
+}
+
 .content-section .special__wrapper {
   padding: 0;
 }
