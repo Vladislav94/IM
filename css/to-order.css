@@ -4,11 +4,18 @@
   color: #000;
   font-family: 'ProximaNova Light';
   list-style: none;
-  line-height: 1.6;
   margin-left: 0;
   padding-left: 0;
 }
+.toorder-info .toorder-info_list .info-item {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 1.2; 
+}
 
+.toorder-info .toorder-info_list .info-item:last-of-type {
+  margin-bottom: 0;
+}
 .toorder-section .toorder-info .list-first {
   width: 260px;
 }
@@ -40,7 +47,21 @@
   margin-right: 35px;
 }
 
+@media screen and (max-width: 991px) {
+
+  .toorder-section .toorder-info .list-first {
+    width: auto;
+    margin-right: 50px;
+  }
+
+}
+
 @media screen and (max-width: 767px) {
+
+
+  .toorder-section .toorder-info .list-first {
+    margin-right: 0;
+  }
 
   .toorder-section .toorder-btn_group .btn-green {
     margin-right: 10px;

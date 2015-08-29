@@ -75,7 +75,6 @@ body {
   src: url('../fonts/PTS/pts55f-webfont.eot');
   src: url('../fonts/PTS/pts55f-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS/pts55f-webfont.woff2') format('woff2'), url('../fonts/PTS/pts55f-webfont.woff') format('woff'), url('../fonts/PTS/pts55f-webfont.ttf') format('truetype'), url('../fonts/PTS/pts55f-webfont.svg#pt_sansregular') format('svg');
 }
-
 @font-face {
   font-family: 'ProximaNova Bold';
   font-weight: 700; 
@@ -154,6 +153,10 @@ h2 {
   font-weight: normal;
 
 }
+
+a {
+  color: #373a72;
+}
 .content-section {
     padding: 20px 40px 40px;
     background: #fff;
@@ -177,6 +180,21 @@ a.btn-green:hover {
   background: #019d72;
 }
 
+.btn-blue,
+a.btn-blue {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #373a72;
+  padding: 11px 25px;
+}
+.btn-blue:hover,
+a.btn-blue:hover {
+  background: #303365;
+}
+
+
 .btn-gray,
 a.btn-gray {
   font-size: 12px;
@@ -186,8 +204,8 @@ a.btn-gray {
   background: #cecece;
   padding: 11px 25px;
 }
-.btn-green:hover,
-a.btn-green:hover {
+.btn-gray:hover,
+a.btn-gray:hover {
   background: #B3B3B3;
 }
 
@@ -205,20 +223,29 @@ a.btn-26 {
   border: 1px solid #d8d8d8;
   height: 30px;
   font-size: 13px;
-  color: #666666;
+  color: #000;
   font-family: 'ProximaNova Light';
   display: table;
   width: 100%;
   padding: 0 10px;
+  overflow: hidden;
 }
 .input-wrap .input-label {
   padding: 6px 4px 6px 0;
   display: table-cell;
+  color: #666;
 }
 .input-wrap input {
   display: table-cell;
   padding: 6px 0;
   width: 100%;
+}
+
+.input-wrap .password-input {
+  font-size: 30px;
+  padding: 0;
+  margin-top: -6px;
+  height: 34px;
 }
 
 .container {
@@ -702,6 +729,15 @@ a.btn-26 {
 
 /* Card item end */
 
+/* Tabs */
+
+.easy-tab .tab-section {
+  display: none;
+}
+
+.easy-tab .tab-section.active {
+  display: block;
+}
 /* Base end */
 
 .justify-last {
@@ -867,6 +903,7 @@ a.btn-26 {
   font-size: 14px;
   font-weight: 700;
   line-height: 50px;
+  color: #000;
 
   position: relative;
 
@@ -975,6 +1012,11 @@ a.btn-26 {
 
   color: #999;
 }
+
+.h-top a {
+  color: #999;
+}
+
 .h-top-1:before {
   margin-right: 5px; 
 
@@ -1030,13 +1072,14 @@ a.btn-26 {
 }
 .h-top__authorization a {
   position: relative;
+  color: #999;
 }
 .h-top__authorization a:first-of-type {
   margin-right: 30px;
 }
 .h-top__authorization a:first-of-type:after {
   position: absolute;
-  top: 5px;
+  top: 3px;
   right: -18px;
 
   display: inline-block;
@@ -1091,6 +1134,11 @@ a.btn-26 {
 
   vertical-align: top;
 }
+
+.footer__catalog a {
+  color: #999;
+}
+
 .footer__catalog-1 {
   display: inline-block;
 
@@ -1119,6 +1167,11 @@ a.btn-26 {
   letter-spacing: .1em; 
   text-transform: uppercase;
 }
+
+.footer__catalog h3 a {
+  color: #000;
+}
+
 .footer__catalog h3 a:hover {
   text-decoration: underline;
 }

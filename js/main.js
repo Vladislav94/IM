@@ -37,6 +37,26 @@ $( document ).ready(function() {
 });
 
 $( document ).ready(function() {
+
+    var $easyTab = $('.easy-tab'),
+        $tabListItem = $easyTab.find('.tab-list_item');
+
+        $tabListItem.on('click', function(){
+            var thisIndex = $(this).index();
+            console.log(thisIndex);
+
+            $(this).addClass('active')
+                   .siblings().removeClass('active');
+
+            $(this).closest('.easy-tab').find('.tab-section')
+                                        .eq(thisIndex).addClass('active')
+                                        .siblings().removeClass('active');
+        });
+
+
+
+
+
     $('.promo-next__product').owlCarousel({
         singleItem : true,
         navigation : false,
@@ -139,4 +159,10 @@ $(document).on('click', '.v-down__3', function (){
     $('.header-dr').text('USD');
     $('.v-o').show();
     $(this).hide();
+});
+
+
+$('.save-changes').on('click', function(){
+  $('.personal-data').toggleClass('form-disabled');
+  return false;
 });
