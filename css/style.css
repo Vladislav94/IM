@@ -130,9 +130,18 @@ body {
   src: url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Thin.woff') format('woff'), url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Thin.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'ProximaNova Regular';
+  font-weight: 400; 
+  font-style: normal;
+
+  src: url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Regular.eot');
+  src: url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Regular.woff') format('woff'), url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Regular.ttf') format('truetype');
+}
+
 html,
 body {
-  font-family: 'ProximaNova', sans-serif;
+  font-family: 'ProximaNova Regular', sans-serif;
 
   background: #f3f3f3;
 }
@@ -166,6 +175,27 @@ a.btn-green {
 .btn-green:hover,
 a.btn-green:hover {
   background: #019d72;
+}
+
+.btn-gray,
+a.btn-gray {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #cecece;
+  padding: 11px 25px;
+}
+.btn-green:hover,
+a.btn-green:hover {
+  background: #B3B3B3;
+}
+
+.btn-26,
+a.btn-26 {
+  padding-top: 7px;
+  padding-bottom: 5px;
+  font-size: 10px;
 }
 
 .content-section .special__wrapper {
@@ -477,6 +507,14 @@ a.btn-green:hover {
   margin: 0;
   font-family: 'ProximaNova SBold';
 }
+
+.low-title {
+  font-size: 30px;
+  color: #000;
+  margin: 0;
+  font-family: 'ProximaNova Regular';
+}
+
 
 .load-icon {
   text-align: center;
