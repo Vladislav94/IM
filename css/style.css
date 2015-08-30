@@ -1671,6 +1671,7 @@ a.btn-26 {
   padding: 0 60px;
 }
 .special__item {
+  display: block;
   width: 250px;
 }
 .special__img {

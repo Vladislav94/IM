@@ -103,11 +103,21 @@
 
 @media screen and (max-width: 479px) {
   .catalog-items .special__item {
-    width: 100%;
-    margin-right: 0;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+  }
+
+  .catalog-items .special__item:nth-child(3n),
+  .catalog-items .special__item:nth-child(3n+1),
+  .catalog-items .special__item:nth-child(2n) {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .catalog-items .special__item .special__img {
-    height: 270px;
+    height: 250px;
   }
 }
