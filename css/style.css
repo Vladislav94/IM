@@ -104,8 +104,6 @@ body {
 
 @font-face {
   font-family: 'ProximaNova ILight';
-  font-weight: 300; 
-  font-style: italic;
 
   src: url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Light Italic.eot');
   src: url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Light Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Light Italic.woff') format('woff'), url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Light Italic.ttf') format('truetype');
@@ -238,16 +236,20 @@ a.btn-26 {
   padding: 0 10px;
   overflow: hidden;
   background: #fff;
+  position: relative;
 }
 .input-wrap .input-label {
-  padding: 6px 4px 6px 0;
-  display: table-cell;
+  padding: 5px 4px 6px 0;
+  display: inline-block;
   color: #666;
   vertical-align: top;
   cursor: text;
+  position: absolute;
+  top: 0;
+  left: 10px;
 }
 .input-wrap input {
-  display: table-cell;
+  display: block;
   padding: 6px 0;
   width: 100%;
   background: none;
@@ -271,17 +273,20 @@ a.btn-26 {
   overflow: hidden;
   background: #fff;
   cursor: text;
+  position: relative;
 }
 
 .textarea-wrap .textarea-label {
   padding: 6px 4px 6px 0;
-  display: table-cell;
+  position: absolute;
+  top: 0;
+  left: 10px;
   color: #666;
   vertical-align: top;
 }
 
 .textarea-wrap textarea {
-  display: table-cell;
+  display: block;
   padding: 6px 0;
   width: 100%;
   background: none;
