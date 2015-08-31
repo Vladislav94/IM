@@ -235,6 +235,7 @@ a.btn-26 {
   width: 100%;
   padding: 0 10px;
   overflow: hidden;
+  background: #fff;
 }
 .input-wrap .input-label {
   padding: 6px 4px 6px 0;
@@ -245,6 +246,7 @@ a.btn-26 {
   display: table-cell;
   padding: 6px 0;
   width: 100%;
+  background: none;
 }
 
 .input-wrap .password-input {
