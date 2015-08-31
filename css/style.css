@@ -166,6 +166,8 @@ a {
 
 .btn {
   display: inline-block;
+  font-family: 'ProximaNova Bold';
+  letter-spacing: 1px;
 }
 .btn-green,
 a.btn-green {
@@ -241,6 +243,8 @@ a.btn-26 {
   padding: 6px 4px 6px 0;
   display: table-cell;
   color: #666;
+  vertical-align: top;
+  cursor: text;
 }
 .input-wrap input {
   display: table-cell;
@@ -255,6 +259,34 @@ a.btn-26 {
   margin-top: -6px;
   height: 34px;
 }
+
+.textarea-wrap {
+  border: 1px solid #d8d8d8;
+  font-size: 13px;
+  color: #000;
+  font-family: 'ProximaNova Light';
+  display: table;
+  width: 100%;
+  padding: 0 10px;
+  overflow: hidden;
+  background: #fff;
+  cursor: text;
+}
+
+.textarea-wrap .textarea-label {
+  padding: 6px 4px 6px 0;
+  display: table-cell;
+  color: #666;
+  vertical-align: top;
+}
+
+.textarea-wrap textarea {
+  display: table-cell;
+  padding: 6px 0;
+  width: 100%;
+  background: none;
+}
+
 
 .container {
   width: 1200px;
