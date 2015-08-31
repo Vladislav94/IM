@@ -1873,6 +1873,65 @@ Icon classes can be used entirely standalone. They are named after their origina
   background-position: -256px -128px;
 }
 
+.owl-has_pagination {
+  height: auto;
+  text-align: center;
+}
+
+.owl-has_pagination .special__item {
+  text-align: left;
+}
+
+.owl-has_pagination .owl-controls {
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  position: relative;
+  display: inline-block;
+  margin-top: 22px;
+}
+
+.owl-has_pagination .owl-controls .owl-page.active {
+  background: #373a72;
+}
+
+
+.owl-has_pagination .owl-controls .owl-prev {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 1px;
+  border: 10px solid transparent;
+  border-right-color: #c4c4c4;
+}
+
+.owl-has_pagination .owl-controls .owl-prev:hover {
+  border-right-color: #373a72; 
+}
+
+.owl-has_pagination .owl-controls .owl-next {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 1px;
+  border: 10px solid transparent;
+  border-left-color: #c4c4c4;
+}
+
+.owl-has_pagination .owl-controls .owl-next:hover {
+  border-left-color: #373a72; 
+}
+
+.owl-has_pagination .owl-controls .owl-page {
+  width: 5px;
+  height: 5px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background: #c4c4c4;
+  display: inline-block;
+}
+
+
 @media (max-width: 1199px) {
   .container {
     width: 992px;

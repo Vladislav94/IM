@@ -34,6 +34,16 @@ $( document ).ready(function() {
         rewindNav: false,
         autoPlay: false
     });
+
+    $('.company-slider').owlCarousel({
+        singleItem : true,
+        navigation : true,
+        navigationText : false,
+        slideSpeed: 1500,
+        //paginationSpeed: 2500,
+        rewindNav: false,
+        autoPlay: false
+    });
 });
 
 $( document ).ready(function() {
