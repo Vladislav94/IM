@@ -161,6 +161,7 @@ a {
     padding: 20px 40px 40px;
     background: #fff;
     margin-bottom: 20px;
+    min-height: 670px;
 }
 
 .btn {
