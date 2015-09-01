@@ -104,8 +104,6 @@ body {
 
 @font-face {
   font-family: 'ProximaNova ILight';
-  font-weight: 300; 
-  font-style: italic;
 
   src: url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Light Italic.eot');
   src: url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Light Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Light Italic.woff') format('woff'), url('../fonts/ProximaNova/Mark Simonson - Proxima Nova Light Italic.ttf') format('truetype');
@@ -238,16 +236,20 @@ a.btn-26 {
   padding: 0 10px;
   overflow: hidden;
   background: #fff;
+  position: relative;
 }
 .input-wrap .input-label {
-  padding: 6px 4px 6px 0;
-  display: table-cell;
+  padding: 5px 4px 6px 0;
+  display: inline-block;
   color: #666;
   vertical-align: top;
   cursor: text;
+  position: absolute;
+  top: 0;
+  left: 10px;
 }
 .input-wrap input {
-  display: table-cell;
+  display: block;
   padding: 6px 0;
   width: 100%;
   background: none;
@@ -271,17 +273,20 @@ a.btn-26 {
   overflow: hidden;
   background: #fff;
   cursor: text;
+  position: relative;
 }
 
 .textarea-wrap .textarea-label {
   padding: 6px 4px 6px 0;
-  display: table-cell;
+  position: absolute;
+  top: 0;
+  left: 10px;
   color: #666;
   vertical-align: top;
 }
 
 .textarea-wrap textarea {
-  display: table-cell;
+  display: block;
   padding: 6px 0;
   width: 100%;
   background: none;
@@ -1867,6 +1872,65 @@ Icon classes can be used entirely standalone. They are named after their origina
   background-image: url(../img/design/sprite.png);
   background-position: -256px -128px;
 }
+
+.owl-has_pagination {
+  height: auto;
+  text-align: center;
+}
+
+.owl-has_pagination .special__item {
+  text-align: left;
+}
+
+.owl-has_pagination .owl-controls {
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  position: relative;
+  display: inline-block;
+  margin-top: 22px;
+}
+
+.owl-has_pagination .owl-controls .owl-page.active {
+  background: #373a72;
+}
+
+
+.owl-has_pagination .owl-controls .owl-prev {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 1px;
+  border: 10px solid transparent;
+  border-right-color: #c4c4c4;
+}
+
+.owl-has_pagination .owl-controls .owl-prev:hover {
+  border-right-color: #373a72; 
+}
+
+.owl-has_pagination .owl-controls .owl-next {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 1px;
+  border: 10px solid transparent;
+  border-left-color: #c4c4c4;
+}
+
+.owl-has_pagination .owl-controls .owl-next:hover {
+  border-left-color: #373a72; 
+}
+
+.owl-has_pagination .owl-controls .owl-page {
+  width: 5px;
+  height: 5px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background: #c4c4c4;
+  display: inline-block;
+}
+
 
 @media (max-width: 1199px) {
   .container {

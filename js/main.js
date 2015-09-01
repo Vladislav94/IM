@@ -34,9 +34,42 @@ $( document ).ready(function() {
         rewindNav: false,
         autoPlay: false
     });
+
+    $('.company-slider').owlCarousel({
+        singleItem : true,
+        navigation : true,
+        navigationText : false,
+        slideSpeed: 1500,
+        //paginationSpeed: 2500,
+        rewindNav: false,
+        autoPlay: false
+    });
 });
 
 $( document ).ready(function() {
+
+    // input
+
+    var $inputWrap = $('.input-wrap');
+
+    $inputWrap.each(function(){
+        var $this = $(this);
+
+        var labelW = $this.find('.input-label').css('width'),
+            inputIndent = $this.find('input').css('padding-left', labelW);
+    });
+
+    var $textareaWrap = $('.textarea-wrap');
+
+    $textareaWrap.each(function(){
+        var $this = $(this);
+
+        var labelW = $this.find('.textarea-label').css('width'),
+            textareaIndent = $this.find('textarea').css('padding-left', labelW);
+    });
+
+
+    // Tab
 
     var $easyTab = $('.easy-tab'),
         $tabListItem = $easyTab.find('.tab-list_item');
