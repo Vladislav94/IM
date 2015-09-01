@@ -2,6 +2,9 @@
 	width: 415px;
 	float: left;
 }
+.contacts_content .contacts_img img {
+	max-width: 100%;
+}
 .contacts_content .contacts_info {
 	width: calc(100% - 415px);
 	float: left;
@@ -43,6 +46,16 @@
 	width: 772px;
 	margin: auto;
 }
+.contacts_feedback .select-wrap {
+	padding: 0;
+}
+.contacts_feedback select {
+    display: block;
+    padding: 5px 0 5px 68px;
+    width: 100%;
+    background: none;
+    border: none;
+}
 .contacts_feedback .input-holder {
 	margin-bottom: 15px;
 }
@@ -53,4 +66,38 @@
 .contacts_feedback .input-right {
 	width: 48%;
 	float: right;
+}
+
+.contacts_feedback textarea {
+	height: 165px;
+}
+
+.contacts_feedback .btn-holder {
+	text-align: center;
+	padding-top: 30px;
+}
+
+@media screen and (max-width: 991px) {
+	.contacts_feedback form {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.contacts_content .contacts_img,
+	.contacts_content .contacts_info {
+		width: 100%;
+		float: none;
+	}
+	.contacts_content .contacts_info {
+		padding-top: 30px;
+		padding-left: 0;
+	}
+	.contacts_feedback .input-left {
+		margin-bottom: 15px;
+	}
+	.contacts_feedback .input-left,
+	.contacts_feedback .input-right {
+		width: 100%;
+		float: none;
+	}
 }

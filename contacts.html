@@ -146,12 +146,17 @@
             <form action="">
                 <h2>Форма обратной связи</h2>
                 <div class="input-holder clearfix">
-                    <div class="input-wrap input-left">
-                      <label class="input-label" for="contacts_name">Имя:</label>
+                    <div class="input-wrap select-wrap input-left">
+                      <label class="input-label">Письмо в:</label>
+                      <select>
+                          <option>Отдел продаж</option>
+                          <option>Отдел 2</option>
+                          <option>Отдел 3</option>
+                      </select>
                     </div>
                     <div class="input-wrap input-right">
-                      <label class="input-label" for="contacts_name">E-Mail:</label>
-                      <input type="text" class="text-input" placeholder="Сергей" id="contacts_name">
+                      <label class="input-label" for="contacts_email">E-Mail:</label>
+                      <input type="text" class="text-input" placeholder="Сергей" id="contacts_email">
                     </div>
                 </div>
                 <div class="input-holder clearfix">
@@ -160,13 +165,16 @@
                       <input type="text" class="text-input" placeholder="Сергей" id="contacts_name">
                     </div>
                     <div class="input-wrap input-right">
-                      <label class="input-label" for="contacts_name">Имя:</label>
-                      <input type="text" class="text-input" placeholder="Сергей" id="contacts_name">
+                      <label class="input-label" for="contacts_phone">Телефон:</label>
+                      <input type="text" class="text-input" placeholder="Сергей" id="contacts_phone">
                     </div>
                 </div>
-                <div class="input-wrap">
-                  <label class="input-label">Сообщение:</label>
-                  <textarea></textarea>
+                <div class="textarea-wrap">
+                  <label class="textarea-label" for="contacts_textarea">Сообщение:</label>
+                  <textarea class="textarea" id="contacts_textarea" style="padding-left: 90px;"></textarea>
+                </div>
+                <div class="btn-holder">
+                    <button type="submit" class="btn btn-blue">отправить сообщение</button>
                 </div>
             </form>
         </div>
