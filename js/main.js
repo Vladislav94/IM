@@ -68,6 +68,16 @@ $( document ).ready(function() {
             textareaIndent = $this.find('textarea').css('padding-left', labelW);
     });
 
+    var $selectWrap = $('.select-wrap');
+
+    $selectWrap.each(function(){
+        var $this = $(this);
+
+        var labelW = $this.find('.select-label').css('width'),
+            textareaIndent = $this.find('select').css('text-indent', labelW);
+    });
+
+
 
     // Tab
 

@@ -267,7 +267,6 @@ a.btn-26 {
   font-size: 13px;
   color: #000;
   font-family: 'ProximaNova Light';
-  display: table;
   width: 100%;
   padding: 0 10px;
   overflow: hidden;
@@ -291,6 +290,47 @@ a.btn-26 {
   width: 100%;
   background: none;
 }
+
+.select-wrap {
+  border: 1px solid #d8d8d8;
+  height: 30px;
+  font-size: 13px;
+  color: #000;
+  font-family: 'ProximaNova Light';
+  display: table;
+  width: 100%;
+  padding: 0 10px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+
+.select-wrap .select-label {
+  padding: 5px 4px 6px 0;
+  display: inline-block;
+  color: #666;
+  vertical-align: top;
+  cursor: text;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.select-wrap select {
+  display: block;
+  padding: 6px 0;
+  width: 100%;
+  background: none;
+  height: 28px;
+}
+
+.select-wrap .password-input {
+  font-size: 30px;
+  padding: 0;
+  margin-top: -6px;
+  height: 34px;
+}
+
+
 
 
 .container {
