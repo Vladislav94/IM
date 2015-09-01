@@ -781,6 +781,7 @@ a.btn-26 {
 .card-item_items .number-of_items .item-add {
   width: 29px;
   height: 29px;
+  cursor: pointer;
 }
 
 .card-item_items .number-of_items .item-rem {
@@ -1779,7 +1780,6 @@ a.btn-26 {
   font-weight: 700;
   margin-top: 15px;
   margin-bottom: 15px;
-
   color: #383a73;
 }
 .special__art {
