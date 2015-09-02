@@ -1140,6 +1140,7 @@ a.btn-26 {
   text-transform: uppercase; 
 
   border-top: 1px solid #e6e6e6;
+  position: relative;
 }
 .header__nav-left {
   display: inline-block;
@@ -1193,7 +1194,7 @@ a.btn-26 {
   display: inline-block;
 
   width: 757px;
-  padding: 0 35px; 
+  padding: 0 15px; 
 
   text-align: justify;
   vertical-align: top;
@@ -1206,19 +1207,20 @@ a.btn-26 {
   margin: 0;
   padding: 0;
 }
-.header__nav-center ul li {
+.header__nav-center > ul > li {
   position: relative;
-
-  display: inline-block;
+  float: left;
 }
 .header__nav-center ul li:nth-of-type(6) a:after {
   display: none;
 }
-.header__nav-center a {
+.header__nav-center > ul > li > a {
   font-size: 14px;
   font-weight: 700;
   line-height: 50px;
   color: #000;
+  padding-left: 20px;
+  padding-right: 20px;
 
   position: relative;
 
@@ -1234,7 +1236,7 @@ a.btn-26 {
 .header__nav-center a:after {
   position: absolute;
   top: 23px; 
-  right: -25px;
+  right: -0;
 
   display: inline-block;
 
@@ -1245,6 +1247,98 @@ a.btn-26 {
 
   background: #c4c4c4;
 }
+
+.header__nav-center ul li.has-dropdown:hover {
+  background: #373a72;
+}
+
+.header__nav-center ul li.has-dropdown:hover > a {
+  color: #fff;
+}
+
+.header__nav-center ul li.has-dropdown:hover > a:after {
+  content: none;
+}
+
+/* menu dropdown */
+
+.header__nav-center .menu-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #373a72;
+  width: 695px;
+  z-index: 1;
+  color: #fff;
+  font-size: 14px;
+  text-transform: none;
+  padding: 20px;
+  margin-top: -1px;
+  display: none;
+}
+
+.header__nav-center ul li.has-dropdown:hover .menu-dropdown {
+  display: block;
+}
+
+.header__nav-center .menu-dropdown .menu-dropdown_section {
+  float: left;
+}
+
+.header__nav-center .menu-dropdown .menu-dropdown_section:first-of-type {
+  width: 140px;
+}
+
+.header__nav-center .menu-dropdown .menu-dropdown_section:nth-of-type(2) {
+  width: 170px;
+}
+
+.header__nav-center .menu-dropdown .menu-dropdown_section:nth-of-type(3) {
+  width: 165px;
+}
+
+.header__nav-center .menu-dropdown .menu-dropdown_section:last-of-type {
+  width: 180px;
+}
+
+.header__nav-center .menu-dropdown .menu-dropdown_list {
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.header__nav-center .menu-dropdown .menu-dropdown_item {
+  list-style: none;
+  display: block;
+  line-height: 1;
+  width: 100%;
+  text-align: left;
+}
+
+.header__nav-center .menu-dropdown .menu-dropdown_title {
+  font-family: 'ProximaNova Bold';
+  line-height: 1.4;
+  color: #fff;
+}
+
+.header__nav-center .menu-dropdown .menu-dropdown_link {
+  color: #fff;
+  font-family: 'ProximaNova Light';
+  line-height: 1.4;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.header__nav-center .menu-dropdown a:after {
+  content: none;
+}
+
+.header__nav-center .menu-dropdown .bold {
+  font-family: 'ProximaNova Bold';
+}
+
+
 .header__nav-right {
   font-size: 14px;
   font-weight: 300;
@@ -2248,6 +2342,13 @@ Icon classes can be used entirely standalone. They are named after their origina
 
     border-right: 0;
   }
+  .header__nav-center > ul > li > a {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .header__nav-center .menu-dropdown {
+    left: -80px;
+  }
   .header__nav-right {
     display: none;
   }
@@ -2309,7 +2410,11 @@ Icon classes can be used entirely standalone. They are named after their origina
     border-left: 0;
   }
   .header__nav-center a:after {
-    right: -22px;
+    right: 0;
+  }
+  .header__nav-center > ul > li > a {
+    padding-left: 17px;
+    padding-right: 17px;
   }
   .header__nav-right {
     display: none;
@@ -2430,8 +2535,46 @@ Icon classes can be used entirely standalone. They are named after their origina
     right: -25px;
   }
   .header__nav-center {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 0;
     display: none;
   }
+  
+  .header__nav-center > ul {
+    background: #fff;
+    margin-top: -3px;
+  }
+
+  .header__nav-center > ul > li {
+    display: block;
+    float: none;
+  }
+
+  .header__nav-center > ul > li > a {
+    display: block;
+  }
+
+  .header__nav-center > ul > li > a:after {
+    content: none;
+  }
+
+  .header__nav-center .menu-dropdown {
+    display: none;
+  }
+
+  .header__nav-center ul li.has-dropdown:hover {
+    background: #fff;
+  }
+
+  .header__nav-center ul li.has-dropdown:hover > a {
+    color: #04af82;
+  }
+
+
   .header__nav-center a {
     display: none;
   }

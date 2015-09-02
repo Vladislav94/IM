@@ -60,6 +60,12 @@ $( document ).ready(function() {
 
 $( document ).ready(function() {
 
+    // dropdown show 
+
+    $('.header__nav--menu-b').on('click', function() {
+        $('.header__nav-center').toggle();
+    });
+
     // modal
 
     var $modalOpen = $('.modal-open'),
