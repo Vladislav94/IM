@@ -60,6 +60,45 @@ $( document ).ready(function() {
 
 $( document ).ready(function() {
 
+    // modal
+
+    var $modalOpen = $('.modal-open'),
+        $modalClose = $('.modal-close'),
+        $modal = $('.modal'),
+        $modalInner = $modal.find('.modal-inner');
+
+    $modalOpen.on('click', function(){
+        var $this = $(this),
+            thisModal = $this.data('modal');
+
+        openModal(thisModal);
+    });
+
+    $modalInner.on('click', function(){
+        return false;
+    });
+
+    $modalClose.on('click', function(){
+        var $this = $(this);
+        closeModal($this.closest('.modal'));
+    });
+
+    $modal.on('click', function(){
+        var $this = $(this);
+        closeModal($this);
+    });
+
+    function openModal(dataModal) {
+        $('.'+dataModal).addClass('modal-open');
+        $('body').addClass('modal-visible');
+    }
+
+    function closeModal(modal) {
+        modal.removeClass('modal-open');
+        $('body').removeClass('modal-visible');
+    }
+
+
     // input
 
     var $inputWrap = $('.input-wrap');

@@ -256,11 +256,28 @@ a.btn-26 {
 }
 
 .input-wrap .password-input {
-  font-size: 30px;
+  font-size: 28px;
   padding: 0;
-  margin-top: -6px;
+  margin-top: -4px;
   height: 34px;
 }
+
+.error-wrap .error-message {
+  color: #ff0909;
+  font-size: 13px;
+  font-family: 'ProximaNova ILight';
+  display: none;
+  margin-top: 5px;
+}
+
+.error-wrap.has-error .error-message {
+  display: block;
+}
+
+.error-wrap.has-error .input-wrap {
+  border-color: #ff0909;
+}
+
 
 .textarea-wrap {
   border: 1px solid #d8d8d8;
@@ -834,6 +851,200 @@ a.btn-26 {
 .easy-tab .tab-section.active {
   display: block;
 }
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.1);
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s;
+  overflow: auto;
+}
+
+.modal.modal-open {
+  visibility: visible;
+}
+
+.modal .modal-inner {
+  width: 390px;
+  background: #fff;
+  margin: -50% auto 50px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s;
+}
+
+.modal.modal-open .modal-inner {
+  margin: 50px auto 50px;
+}
+
+.modal .modal-inner .modal-header {
+  background: #f3f3f3;
+  display: table;
+  width: 100%;
+}
+
+.modal-inner .modal-header .modal-head_right {
+  display: table-cell;
+  vertical-align: top;
+  width: 55px;
+  padding-right: 40px;
+  padding-top: 25px;
+}
+
+.modal-close {
+  cursor: pointer;
+}
+
+.modal-inner .modal-header .modal-title {
+  font-size: 24px;
+  color: #000;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1.2;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 76px;
+  font-family: 'ProximaNova SBold';
+}
+
+.modal-inner .modal-body {
+  padding: 10px 40px 40px;
+}
+
+.modal-inner .modal-body .modal-text {
+  font-size: 13px;
+  color: #000;
+  font-family: 'ProximaNova Light';
+  line-height: 1.8;
+}
+
+.modal-inner .modal-body .error-wrap:first-of-type {
+  margin-top: 25px;
+}
+
+.modal-inner .modal-body .checkbox-wrap {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.modal-inner .modal-body .checkbox-wrap .forgot-pass {
+  float: right;
+  font-size: 14px;
+  font-family: 'ProximaNova Light';
+  margin-top: 2px;
+}
+
+.modal-body .checkbox-wrap .checkbox-label {
+  position: relative;
+  padding-left: 20px;
+}
+.modal-body .checkbox-wrap .checkbox-label .checkbox-input {
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.modal-body .checkbox-wrap .checkbox-text {
+  font-size: 14px;
+  color: #000;
+  font-family: 'ProximaNova Light';
+}
+
+.modal-inner .modal-body .modal-body_title {
+  font-size: 14px;
+  color: #000;
+  font-family: 'ProximaNova Bold';
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.modal-body .enter-social {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+
+.modal-body .modal-socials {
+  margin-top: 15px;
+}
+
+.modal-body .modal-socials .social {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  background-image: url(../img/icons/socials.png);
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  transition: .2s;
+}
+
+.modal-body .modal-socials .social.vk {
+  background-color: #4380ac;
+}
+
+.modal-body .modal-socials .social.vk:hover {
+  background-color: #3F78A1;
+}
+
+.modal-body .modal-socials .social.fb {
+  background-position: -30px 0;
+  background-color: #0b5596;
+}
+
+.modal-body .modal-socials .social.fb:hover {
+  background-color: #094D88;
+}
+
+.modal-body .modal-socials .social.twitter {
+  background-position: -60px 0;
+  background-color: #25aae3;
+}
+
+.modal-body .modal-socials .social.twitter:hover {
+  background-color: #1A84B0;
+}
+
+.modal-inner .modal-body .btn {
+  margin-top: 10px;
+}
+
+.modal-inner .modal-body .btn[disabled] {
+  background: #373a72;
+  opacity: .4;
+}
+
+.modal-inner .modal-body .error-wrap {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.modal-inner .modal-body .error-wrap .input-wrap {
+  margin-bottom: 0;
+}
+
+.modal-visible {
+  overflow: hidden;
+}
+
 /* Base end */
 
 .justify-last {
