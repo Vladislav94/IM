@@ -208,7 +208,6 @@ $( document ).ready(function() {
         itemsTablet: [767,1],
         itemsMobile : [479,1],
         items : 4,
-        navigationText : false,
         slideSpeed: 1000
     });
 

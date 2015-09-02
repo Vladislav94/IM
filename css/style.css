@@ -877,16 +877,24 @@ a.btn-26 {
 .modal .modal-inner {
   width: 390px;
   background: #fff;
-  margin: -50% auto 50px;
+  margin: 50px auto 50px;
   -webkit-transition: .5s;
   -o-transition: .5s;
   -moz-transition: .5s;
   -ms-transition: .5s;
   transition: .5s;
+
+  -webkit-transform: translateY(-120%);
+  -ms-transform: translateY(-120%);
+  -o-transform: translateY(-120%);
+  transform: translateY(-120%);
 }
 
 .modal.modal-open .modal-inner {
-  margin: 50px auto 50px;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .modal .modal-inner .modal-header {
@@ -1956,6 +1964,34 @@ a.btn-26 {
   height: 400px;
   margin-top: 22px;
 }
+
+.special__tabs-content .owl-controls .owl-prev {
+  position: absolute;
+  top: 110px;
+  left: 20px;
+  width: 1px;
+  border: 10px solid transparent;
+  border-right-color: #c4c4c4;
+}
+
+.special__tabs-content .owl-controls .owl-prev:hover {
+  border-right-color: #373a72; 
+}
+
+.special__tabs-content .owl-controls .owl-next {
+  position: absolute;
+  top: 110px;
+  right: 30px;
+  width: 1px;
+  border: 10px solid transparent;
+  border-left-color: #c4c4c4;
+}
+
+.special__tabs-content .owl-controls .owl-next:hover {
+  border-left-color: #373a72; 
+}
+
+
 .special__discounts {
   height: 400px;
 }
@@ -2622,5 +2658,22 @@ Icon classes can be used entirely standalone. They are named after their origina
     display: inline-block;
     margin-right: 10px;
     vertical-align: middle;
+  }
+
+  .modal-inner .modal-header .modal-title {
+    padding-left: 20px;
+  }
+
+  .modal-inner .modal-header .modal-head_right {
+    padding-right: 20px;
+    width: 35px;
+  }
+
+  .modal .modal-inner {
+    width: 290px;
+  }
+
+  .modal-inner .modal-body {
+    padding: 10px 20px 40px;
   }
 }

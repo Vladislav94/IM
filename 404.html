@@ -41,8 +41,8 @@
       </div>
       <!-- /.h-top-5 -->
       <div class="h-top__authorization">
-        <a href="#">Вход</a>
-        <a href="#">Регистрация</a>
+        <a href="#" class="modal-open" data-modal='enter'>Вход</a>
+        <a href="#" class="modal-open" data-modal="registration">Регистрация</a>
       </div>
       <!-- /.header__authorization -->
       <div class="r-down">
@@ -279,6 +279,135 @@
     <!-- ./container-->
   </footer>
   <!-- ./footer-->
+
+  <div class="modal registration">
+    <div class="modal-inner">
+      <div class="modal-header">
+        <div class="modal-title">Регистрация</div>
+        <div class="modal-head_right"><img src="img/icons/modal-close.png" alt="" class="modal-close"></div>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-text">Будьте внимательны, все поля обязательны для заполнения. Спасибо!</p>
+        
+        <div class="error-wrap">
+          <div class="input-wrap">
+            <span class="input-label">Имя:</span>
+            <input type="text" class="input-text" value="Сергей">
+          </div>
+
+          <div class="error-message">Вы не указали имя</div>
+        </div>
+        
+        <div class="error-wrap has-error">
+          <div class="input-wrap">
+            <span class="input-label">Фамилия:</span>
+            <input type="text" class="input-text">
+          </div>
+
+          <div class="error-message">Вы не указали фамилию</div>
+        </div>
+        
+        <div class="error-wrap">
+          <div class="input-wrap">
+            <span class="input-label">Логин:</span>
+            <input type="text" class="input-text">
+          </div>
+
+          <div class="error-message">Вы не указали логин</div>
+        </div>
+
+        <div class="error-wrap">
+          <div class="input-wrap">
+            <span class="input-label">Пароль:</span>
+            <input type="password" class="input-text password-input">
+          </div>
+
+          <div class="error-message">Вы не указали пароль</div>
+        </div>
+        
+        <div class="error-wrap has-error">
+          <div class="input-wrap">
+            <span class="input-label">Пароль еще раз:</span>
+            <input type="password" class="input-text password-input">
+          </div>
+
+          <div class="error-message">Пароли не совпадают</div>
+        </div>
+        
+        <div class="error-wrap has-error">
+          <div class="input-wrap">
+            <span class="input-label">E-Mail:</span>
+            <input type="text" class="input-text" value="serg_ivanov@gmail.com">
+          </div>
+
+          <div class="error-message">Некорректный адрес почты</div>
+        </div>
+        
+        <div class="checkbox-wrap">
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input">
+            <span class='checkbox-text'>Подписаться на рассылку</span>
+          </label>
+        </div>
+
+        <button class="btn btn-blue" disabled="disabled">зарегистрироваться</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal enter">
+    <div class="modal-inner">
+      <div class="modal-header">
+        <div class="modal-title">Вход на сайт</div>
+        <div class="modal-head_right"><img src="img/icons/modal-close.png" alt="" class="modal-close"></div>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="modal-body_title">Введите логин и пароль:</div>
+        
+        <div class="error-wrap">
+          <div class="input-wrap">
+            <span class="input-label">Логин:</span>
+            <input type="text" class="input-text">
+          </div>
+
+          <div class="error-message">Вы не указали логин</div>
+        </div>
+
+        <div class="error-wrap">
+          <div class="input-wrap">
+            <span class="input-label">Пароль:</span>
+            <input type="password" class="input-text password-input">
+          </div>
+
+          <div class="error-message">Вы не указали пароль</div>
+        </div>
+        
+        <div class="checkbox-wrap">
+          <a href="/" class="forgot-pass">Забыли пароль?</a>
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input">
+            <span class='checkbox-text'>Запомнить меня</span>
+          </label>
+        </div>
+
+        <div class="enter-social">
+          <div class="modal-body_title">Или войдите с помощью:</div>
+
+          <div class="modal-socials clearfix">
+            <a href="/" class="social vk"></a>
+            <a href="/" class="social fb"></a>
+            <a href="/" class="social twitter"></a>
+          </div>
+
+        </div>
+
+        <button class="btn btn-blue" disabled="disabled">войти</button>
+      </div>
+    </div>
+  </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
