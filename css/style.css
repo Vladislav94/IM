@@ -1330,6 +1330,10 @@ a.btn-26 {
   display: inline-block;
 }
 
+.menu-dropdown .menu-dropdown_title .menu-dropdown_link {
+  font-family: 'ProximaNova Bold';
+}
+
 .header__nav-center .menu-dropdown a:after {
   content: none;
 }
@@ -2562,7 +2566,7 @@ Icon classes can be used entirely standalone. They are named after their origina
     content: none;
   }
 
-  .header__nav-center .menu-dropdown {
+  .header__nav-center ul li.has-dropdown:hover .menu-dropdown {
     display: none;
   }
 
@@ -2592,6 +2596,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   .header__nav--menu-b img {
     width: 35px;
   }
+
   .r-down {
     display: inline-block;
 
